@@ -9,7 +9,7 @@ open Microsoft.Extensions.Logging
 type Blog =
     { Id: int
       Title: string
-      Content: string }
+      Content: string option }
 
 type DBModelContext() =
     inherit DbContext()
